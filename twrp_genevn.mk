@@ -13,14 +13,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-# Inherit some common TWRP stuff.
+# Inherit some common TWRP/OFox stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from genevn device
 $(call inherit-product, device/motorola/genevn/device.mk)
 
 PRODUCT_DEVICE := genevn
-PRODUCT_NAME := twrp_genevn
+PRODUCT_NAME := ofox_genevn
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := motorola moto g stylus 5g (2023)
 PRODUCT_MANUFACTURER := motorola
