@@ -1,8 +1,13 @@
-Include your kernel image or find one for your specific device in telegram or xda (also could pull it from your boot image)
-Place kernel image named kernel in folder named prebuilt
-check for maintainer image placement is correct (if no it will show "no image")
+Extract kernel.gz to same folder 
+
+check for maintainer image placement is correct
+(if no it will show "no image")
 
 # Building
+
+setup build environment for orangefox 12.1
+add device trees 
+
 ```bash
 . build/envsetup.sh
 lunch ofox_genevn-eng && m -j$(nproc --all) recoveryimage
