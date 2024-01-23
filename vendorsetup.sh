@@ -1,5 +1,5 @@
    	export DEVICE_PATH=device/motorola/genevn
-	export INCLUDE_PATH=$DEVICE_PATH/include
+# Change maintainer avatar directiory to your ~/folder/file.png or comment out
         export OF_MAINTAINER_AVATAR=$("ls" ~/avatar/sosRR.png)
         export OF_MAINTAINER=sosRR
         export FOX_BUILD_TYPE="Stable"
@@ -12,7 +12,6 @@
         export OF_SUPPORT_ALL_BLOCK_OTA_UPDATES=1
         export OF_FIX_OTA_UPDATE_MANUAL_FLASH_ERROR=1
         export OF_SUPPORT_ALL_PAYLOAD_OTA_UPDATES=1
-#
         export OF_ENABLE_USB_STORAGE=1
         export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
