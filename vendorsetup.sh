@@ -1,9 +1,9 @@
    	export DEVICE_PATH=device/motorola/genevn
-# Change maintainer avatar directiory to your ~/folder/file.png or comment out
-        export OF_MAINTAINER_AVATAR=$("ls" ~/avatar/sosRR.png)
+## Change maintainer avatar directiory to your ~/folder/file.png or comment out
+#        export OF_MAINTAINER_AVATAR=$("ls" ~/avatar/sosRR.png)
         export OF_MAINTAINER=sosRR
         export FOX_BUILD_TYPE="Stable"
-# run a process after formatting data to work-around MTP issues
+## run a process after formatting data to work-around MTP issues
 	export OF_RUN_POST_FORMAT_PROCESS=1
         export OF_FBE_METADATA_MOUNT_IGNORE=1
         export OF_ENABLE_LPTOOLS=1
@@ -17,6 +17,7 @@
 	export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 	export OF_SUPPORT_OZIP_DECRYPTION=1
 	export TW_OZIP_DECRYPT_KEY="0000"
+## Changed to a ls function to find Magisk-v26.4.zip in your ~/ folder
 #	 export FOX_USE_SPECIFIC_MAGISK_ZIP="~/magisk/Magisk-v26.4.zip"
         export FOX_USE_SPECIFIC_MAGISK_ZIP=$("ls" ~/Magisk/Magisk-v26.4.zip)
         export OF_USE_LATEST_MAGISK=1
