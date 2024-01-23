@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_genevn.mk
+    $(LOCAL_DIR)/ofox_genevn.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_genevn-user \
-    twrp_genevn-userdebug \
-    twrp_genevn-eng
+    ofox_genevn-user \
+    ofox_genevn-userdebug \
+    ofox_genevn-eng
