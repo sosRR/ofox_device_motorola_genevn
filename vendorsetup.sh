@@ -18,6 +18,6 @@
 	export OF_SUPPORT_OZIP_DECRYPTION=1
 	export TW_OZIP_DECRYPT_KEY="0000"
 ## Changed to a ls function to find Magisk-v26.4.zip in your ~/ folder
-#	 export FOX_USE_SPECIFIC_MAGISK_ZIP="~/magisk/Magisk-v26.4.zip"
-        export FOX_USE_SPECIFIC_MAGISK_ZIP=$("ls" ~/Magisk/Magisk-v26.4.zip)
+## Use this variable if you are searching for the zip file
+#        export FOX_USE_SPECIFIC_MAGISK_ZIP=$("ls" ~/Magisk/Magisk-v26.4.zip)
         export OF_USE_LATEST_MAGISK=1
