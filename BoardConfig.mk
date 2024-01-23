@@ -7,7 +7,6 @@
 
 DEVICE_PATH := device/motorola/genevn
 DEVICE_PREBUILT_PATH := device/motorola/genevn/prebuilt
-INCLUDE_PATH := $(DEVICE_PATH)/include
 
 LC_ALL="C"
 BUILD_BROKEN_DUP_RULES := true
