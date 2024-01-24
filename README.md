@@ -1,7 +1,5 @@
-Extract kernel.gz to same folder 
-
-check that maintainer image placement is correct
-(if not maintainer in settings will display "no image")
+Check that maintainer avatar placement is correct
+(if not maintainer avatar in settings will display "no image")
 
 # Building
 
