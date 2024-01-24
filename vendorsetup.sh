@@ -1,7 +1,7 @@
    	export DEVICE_PATH=device/motorola/genevn
 ## Change maintainer avatar directiory to your ~/folder/file.png or comment out
 #        export OF_MAINTAINER_AVATAR=$("ls" ~/avatar/sosRR.png)
-        export OF_MAINTAINER=sosRR
+#        export OF_MAINTAINER=sosRR
         export FOX_BUILD_TYPE="Stable"
 ## run a process after formatting data to work-around MTP issues
 	export OF_RUN_POST_FORMAT_PROCESS=1
