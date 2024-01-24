@@ -19,6 +19,8 @@ cd ~/OrangeFox_sync/sync/
 ## Add device tree by git clone or download directly
 ## then build!
 
+cd ~/fox_12.1
+
 . build/envsetup.sh
 lunch ofox_genevn-eng && m -j$(nproc --all) recoveryimage
 ```
