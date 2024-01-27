@@ -17,6 +17,7 @@ is_fastboot=$(getprop init.svc.fastbootd)
 if [ "$is_fastboot" != "running" ]; then
         mount /vendor_dlkm
         insmod /vendor_dlkm/lib/modules/ili9882_mmi.ko
+        insmod /vendor_dlkm/lib/modules/leds_aw99703.ko
         insmod /vendor_dlkm/lib/modules/msm_drm.ko
         insmod /vendor_dlkm/lib/modules/mmi_annotate.ko
         insmod /vendor_dlkm/lib/modules/mmi_info.ko
