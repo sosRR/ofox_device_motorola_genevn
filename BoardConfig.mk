@@ -24,20 +24,20 @@ AB_OTA_PARTITIONS += \
     vendor_dlkm \
     vendor_boot
 
-# Architecture
-TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a-dotprod
-TARGET_CPU_ABI := arm64-v8a
-TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a75
-TARGET_CPU_VARIANT_RUNTIME := kryo300
+#  Architecture
+TARGET_ARCH := arm
+TARGET_ARCH_VARIANT := armv8-2a
+TARGET_CPU_ABI := armeabi-v7a
+TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_VARIANT := cortex-a55
+TARGET_CPU_VARIANT_RUNTIME := cortex-a55
 
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a55
-TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
+TARGET_2ND_ARCH := arm64
+TARGET_2ND_ARCH_VARIANT := armv8-2a-dotprod
+TARGET_2ND_CPU_ABI := arm64-v8a
+TARGET_2ND_CPU_ABI2 := 
+TARGET_2ND_CPU_VARIANT := cortex-a75
+TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a75
 
 TARGET_SUPPORTS_64_BIT_APPS := true
 
@@ -131,8 +131,8 @@ OF_STATUS_INDENT_RIGHT := 64
 OF_ADVANCED_SECURITY := true
 FOX_VERSION := S12.1
 FOX_DELETE_AROMAFM := true
-FOX_RECOVERY_VENDOR_PARTITION := /dev/block/mapper/vendor
-FOX_RECOVERY_SYSTEM_PARTITION := /dev/block/mapper/system
+FOX_RECOVERY_VENDOR_PARTITION := '/dev/block/mapper/vendor'
+FOX_RECOVERY_SYSTEM_PARTITION := '/dev/block/mapper/system'
 TW_OVERRIDE_SYSTEM_PROPS := "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
 TW_NO_USB_STORAGE := false
 RECOVERY_SDCARD_ON_DATA := false
@@ -201,18 +201,18 @@ TW_INCLUDE_REPACKTOOLS := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_NTFS_3G := true
-TW_BACKUP_EXCLUSIONS := /data/fonts
+TW_BACKUP_EXCLUSIONS := '/data/fonts'
 TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
-TW_BRIGHTNESS_PATH := /sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness
+TW_BRIGHTNESS_PATH := '/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness'
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1024
 TW_FRAMERATE := 60
 TW_HAS_EDL_MODE := true
 TW_INCLUDE_FASTBOOTD := true
-TW_CUSTOM_CPU_TEMP_PATH := /sys/class/thermal/thermal_zone39/temp
+TW_CUSTOM_CPU_TEMP_PATH := '/sys/class/thermal/thermal_zone39/temp'
 TW_EXCLUDE_DEFAULT_USB_INIT := false
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
+TARGET_USE_CUSTOM_LUN_FILE_PATH := '/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file'
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true
 TW_EXCLUDE_APEX := true
