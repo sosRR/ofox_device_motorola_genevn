@@ -69,6 +69,8 @@ BOARD_DTB_OFFSET           := 0x01f00000
 BOARD_KERNEL_CMDLINE += stack depot disable-on kasan.stacktrace-off kvm-arm.mode=protected cgroup_disable-pressure cgroup.memory=nokmem console=null loglevel-6 log_buf_len=256K kernel.panic_on_rcu_stall=1 loop.max part-7 pcie_ports=compat msm_rtb.filter=0x237 allow_mismatched_32bit_elo kasan=off rcupdate.rcu_expedited-1 Tou nocbs-0-7 ftrace_dump_on_oops pstore.compress=none kpti-0 swiotlb-noforce cgroup.memory=nokmem,nosocket kswapd per_node=2 slub_debug=- allow_file_spec_access cpufreq.default_governor-performance transparent_hugepage-never page_poison-on can.stats_timer=0 disable_dma32=on fsa4480_12c.async_probe=1 video=vfb:640x400,bpp=32,memsize=3072000 printk.devkmsg-on firmware_class.path=/vendor/ firmware_mnt/image bootconfig qcom_dload_mode.name=mini msm_drm.dsi_display0=qcom,mdss_dsi_mot_tm_ili7807s_660_1080x2400_dsc_vid_120hz: rootwait ro init=/init quiet
 BOARD_BOOTCONFIG += \
     androidboot.hardware=qcom \
+    androidboot.bootdevice=1d84000.ufshc \
+    androidboot.boot_devices=soc/1d84000.ufshc \
     androidboot.memcg=1 \
     androidboot.usbcontroller=a600000.dwc3 \
     msm_rtb.filter=0x237 \
