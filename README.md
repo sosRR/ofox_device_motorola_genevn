@@ -14,7 +14,7 @@ git clone https://gitlab.com/OrangeFox/sync.git # (or, using ssh, "git clone git
 cd ~/OrangeFox_sync/sync/
 ./orangefox_sync.sh --branch 12.1 --path ~/fox_12.1
 
-## Add device tree by git clone or download directly
+## Add device tree by download directly.. TEAMWIN xml stays constant for some reason
 ## then build!
 
 cd ~/fox_12.1
