@@ -21,3 +21,5 @@
 ## Use this variable if you are searching for the zip file
 #        export FOX_USE_SPECIFIC_MAGISK_ZIP=$("ls" ~/Magisk/Magisk-v26.4.zip)
         export OF_USE_LATEST_MAGISK=1
+# Remove splash modification ability to prevent catastrophic bootloop
+        export OF_NO_SPLASH_CHANGE=1
