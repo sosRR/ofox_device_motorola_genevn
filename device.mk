@@ -115,9 +115,6 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 # TZDATA
 PRODUCT_PACKAGES += \
     tzdata_twrp
-# Virtual ab device
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.virtual_ab.enabled=true
     
 # Namespace definition for librecovery_updater
 SOONG_CONFIG_NAMESPACES += ufsbsg
