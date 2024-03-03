@@ -15,6 +15,10 @@ BOARD_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 31
 SHIPPING_API_LEVEL := 31
 
+# Virtual ab device
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.virtual_ab.enabled=true
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
